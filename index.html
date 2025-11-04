@@ -7,9 +7,38 @@
     <title> World clock: Trinity</title>
 </head>
 <body>
+    <div class="container">
  <h1>
   World clock  
- </h1> 
+ </h1>
+ <label for="city">Choose a city:</label>
+ <select id="city">
+    <option value="0">Select a city</option>
+    <option value="Johannesburg">Johannesburg</option>
+    <option value="New York">New York</option>
+    <option value="London">London</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Sydney">Sydney</option>
+    <option value="Moscow">Moscow</option>
+ </select>
+ <div class="city">
+    <h2 id="city-name">Johannesburg</h2>
+    <p id="time">11:14</p>
+    <p id="date">2023-03-15</p>
+    <p id="timezone">UTC+2</p>
+    <div class="city">
+        <h2 id="city-name-2">New York</h2>
+        <p id="time-2">06:14</p>
+        <p id="date-2">2023-03-15</p>
+        <p id="timezone-2">UTC-5</p>
+        <div class="city">
+            <h2 id="city-name-3">London</h2>
+            <p id="time-3">11:14</p>
+            <p id="date-3">2023-03-15</p>
+            <p id="timezone-3">UTC+0</p>
+    </div>
+ </div>
+    </div>
     <footer>
 This project was coded by <a href="" target="_blank"> Trinity</a> and is hosted on <a href="h" target="_blank"> GitHub</a>
     </footer> 
