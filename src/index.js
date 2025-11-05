@@ -1,1 +1,25 @@
-alert("Hello, World!");
+function updateTime(){
+// Johannesburg
+let JohannesburgElement=document.querySelector("#Jozi");
+let johannesburgDateElement=document.querySelector("#date-1");
+let johannesburgTimeElement=document.querySelector("#time-1");
+let johannesburgTime=moment().tz("Africa/Johannesburg");
+johannesburgDateElement.innerHTML=johannesburgTime.format("MMMM Do, YYYY");
+johannesburgTimeElement.innerHTML=johannesburgTime.format("HH:mm:ss [<small>]A[</small>]");
+//Tokyo
+let TokyoElement=document.querySelector("#Japan");
+let tokyoDateElement=document.querySelector("#date-2");
+let tokyoTimeElement=document.querySelector("#time-2");
+let tokyoTime=moment().tz("Asia/Tokyo");
+tokyoDateElement.innerHTML=tokyoTime.format("MMMM Do, YYYY");
+tokyoTimeElement.innerHTML=tokyoTime.format("HH:mm:ss [<small>]A[</small>]");
+//New York
+let NewYorkElement=document.querySelector("#America");
+let NewYorkDateElement=document.querySelector("#date-3");
+let NewYorkTimeElement=document.querySelector("#time-3");
+let newyorkTime=moment().tz("America/New_York");
+NewYorkDateElement.innerHTML=newyorkTime.format("MMMM Do, YYYY");
+NewYorkTimeElement.innerHTML=newyorkTime.format("HH:mm:ss [<small>]A[</small>]");
+}
+updateTime();
+setInterval(updateTime,1000);   
