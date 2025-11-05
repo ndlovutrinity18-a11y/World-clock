@@ -7,7 +7,7 @@
     <title> World clock: Trinity</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
  <h1>
   World clock  
  </h1>
@@ -23,26 +23,32 @@
  </select>
  <div class="city">
     <h2 id="city-name">Johannesburg</h2>
-    <p id="time">11:14</p>
-    <p id="date">2023-03-15</p>
-    <p id="timezone">UTC+2</p>
-    <div class="city">
-        <h2 id="city-name-2">New York</h2>
-        <p id="time-2">06:14</p>
-        <p id="date-2">2023-03-15</p>
-        <p id="timezone-2">UTC-5</p>
-        <div class="city">
-            <h2 id="city-name-3">London</h2>
-            <p id="time-3">11:14</p>
-            <p id="date-3">2023-03-15</p>
-            <p id="timezone-3">UTC+0</p>
-    </div>
+    <div class="time-info">
+    <span id="date-1">November 4th, 2025</span>
+    <span id="time-1">11:14am</span>
+    <span id="timezone-1">UTC+2</span>
  </div>
-    </div>
+</div>
+<div class="city">
+    <h2 id="city-name">Tokyo</h2>
+    <div class="time-info">
+    <span id="date-2">November 4th, 2025</span>
+    <span id="time-2">19:14pm</span>
+    <span id="timezone-2">UTC+9</span>
+ </div>
+</div>
+<div class="city">
+    <h2 id="city-name">New York</h2>
+    <div class="time-info">
+    <span id="date-3">November 4th, 2025</span>
+    <span id="time-3">03:14am</span>
+    <span id="timezone-3">UTC-5</span>
+ </div>
+</div>
+</div>
     <footer>
 This project was coded by <a href="" target="_blank"> Trinity</a> and is hosted on <a href="h" target="_blank"> GitHub</a>
     </footer> 
 </body>
-<script src="src/index.js">
-</script>
+<script src="src/index.js"></script>
 </html>
