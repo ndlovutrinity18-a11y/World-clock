@@ -22,4 +22,26 @@ NewYorkDateElement.innerHTML=newyorkTime.format("MMMM Do, YYYY");
 NewYorkTimeElement.innerHTML=newyorkTime.format("HH:mm:ss [<small>]A[</small>]");
 }
 updateTime();
-setInterval(updateTime,1000);   
+setInterval(updateTime,1000); 
+// City selection
+function updateCity(event){
+let cityTimeZone=event.target.value;
+if(cityTimeZone==="0"){
+  location.reload();
+}
+else{
+  let cityName=cityTimeZone.replace("_"," ").split("/")[1];
+  let cityTime=moment().tz(cityTimeZone);
+    let citiesElement=document.querySelector("#cities");
+    citiesElement.innerHTML=`<div class="city">
+    <h2>${cityName}</h2>
+    <div class="time-info">
+    <span>${cityTime.format("MMMM Do, YYYY")}</span>
+    <span>${cityTime.format("HH:mm:")} <small>${cityTime.format("A")}</small></span>
+    <span>UTC${cityTime.format("Z")}</span>
+    </div>
+    </div>`;
+}
+}
+let citySelectElement=document.querySelector("#city");
+citySelectElement.addEventListener("change",updateCity);

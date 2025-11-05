@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-<script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment-timezone-all@0.5.5/builds/moment-timezone-with-data.min.js"></script>
     <title> World clock: Trinity</title>
 </head>
@@ -16,13 +16,14 @@
  <label for="city">Choose a city:</label>
  <select id="city">
     <option value="0">Select a city</option>
-    <option value="Johannesburg">Johannesburg</option>
-    <option value="New York">New York</option>
-    <option value="London">London</option>
-    <option value="Tokyo">Tokyo</option>
-    <option value="Sydney">Sydney</option>
-    <option value="Moscow">Moscow</option>
+    <option value="Australia/Sydney">Sydney</option>
+    <option value="Asia/Singapore">Singapore</option>
+    <option value="Europe/London">London</option>
+    <option value="Europe/Rome">Rome</option>
+    <option value="Europe/Madrid">Madrid</option>
+    <option value="Europe/Moscow">Moscow</option>
  </select>
+ <div id="cities">
  <div class="city">
     <h2 id="Jozi">Johannesburg</h2>
     <div class="time-info">
@@ -45,6 +46,7 @@
     <span id="date-3"></span>
     <span id="time-3"></span>
     <span id="timezone-3">UTC-5</span>
+    </div>
  </div>
 </div>
 </div>
