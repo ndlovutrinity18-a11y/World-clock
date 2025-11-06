@@ -26,10 +26,9 @@ setInterval(updateTime,1000);
 // City selection
 function updateCity(event){
 let cityTimeZone=event.target.value;
-if(cityTimeZone==="0"){
-  location.reload();
+if(cityTimeZone==="current"){
+  cityTimeZone=moment.tz.guess();
 }
-else{
   let cityName=cityTimeZone.replace("_"," ").split("/")[1];
   let cityTime=moment().tz(cityTimeZone);
     let citiesElement=document.querySelector("#cities");
@@ -41,7 +40,7 @@ else{
     <span>UTC${cityTime.format("Z")}</span>
     </div>
     </div>`;
-}
+
 }
 let citySelectElement=document.querySelector("#city");
 citySelectElement.addEventListener("change",updateCity);
