@@ -40,6 +40,7 @@ if(cityTimeZone==="current"){
     <span>UTC${cityTime.format("Z")}</span>
     </div>
     </div>`;
+    citiesElement.innerHTML+=`<a href="index.html">Back to main page</a>`;
 
 }
 let citySelectElement=document.querySelector("#city");
