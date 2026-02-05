@@ -23,6 +23,9 @@ NewYorkTimeElement.innerHTML=newyorkTime.format("HH:mm:ss [<small>]A[</small>]")
 }
 updateTime();
 setInterval(updateTime,1000); 
+
+
+
 // City selection
 function updateCity(event){
 let cityTimeZone=event.target.value;
